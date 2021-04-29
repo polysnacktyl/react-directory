@@ -1,0 +1,29 @@
+.navbar {
+  margin-top:15px;
+}
+
+.nav {
+  margin-top   : 15px;
+  border-radius: 5px;
+}
+
+.navbar-nav {
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.nav-link {
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  border-radius: 5px;
+}
+
+#navbarSupportedContent {
+  border-radius: 5px;
+}
+
+#root {
+  border-radius: 0px;
+}
