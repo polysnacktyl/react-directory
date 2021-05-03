@@ -1,0 +1,21 @@
+table.table {
+    color     : grey;
+    text-align: left;
+    margin: 4%;
+    font-size:x-large;
+
+}
+table.table td {
+    vertical-align: baseline;
+}
+
+table.table tr {
+    margin: 5px;
+    vertical-align: baseline;
+    border: none;
+
+}
+
+table.table th {
+    text-align: left;
+}
