@@ -1,0 +1,21 @@
+.jumbotron.jumbotron-fluid {
+    margin-top: 20px;
+    font-weight: 700;
+    background: rgb(59, 59, 59);
+    min-width: 100%;
+    padding: 0;
+}
+
+.h1, h1{
+    color:rgb(151, 151, 151);
+    font-variant: small-caps;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+div.row {
+    display: flex;
+    justify-content: space-around;
+}
