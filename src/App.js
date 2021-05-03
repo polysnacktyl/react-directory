@@ -1,12 +1,22 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
+import SearchResults from "./components/SearchResults";
+import Header from "./components/Header/Header";
+// import Filter from "./components/SearchFilter/SearchFilter"
+
+
+
+
 
 function App() {
   return (
     <div className="container">
-      <Navbar />
-
+      <Header />
+      <SearchResults />
+      
+    
     </div>
+     
+    
   );
 }
 
