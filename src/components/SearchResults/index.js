@@ -5,10 +5,17 @@ import API from '../../utils/API';
 class App extends React.Component {
   state = { employees: [], search: '' }
 
+
+  searchSpace = (evt) => {
+    let keyword = evt.target.value;
+    this.setState({ search: keyword })
+  }
+
+
   componentDidMount() {
     this.showTeam()
   }
-
+  
   showTeam = () => {
     API.summonRandos()
       .then(res =>
@@ -61,34 +68,32 @@ class App extends React.Component {
     )
   }
 
-
   render() {
     return (
-        <div className="row" >
-          <table className="table">
-            <thead>
-              <tr>
-                <th></th>
-                <th><span role="button" onClick={this.sortByLast}>Last</span></th>
-                <th><span role="button" onClick={this.sortByFirst}>First</span></th>
-                <th>email</th>
-                <th>phone</th>
-              </tr>
-            </thead>
-            {[...this.state.employees].map((item) => (
-              <EmployeeCard
-                picture={item.picture}
-                firstName={item.firstName}
-                lastName={item.lastName}
-                email={item.email}
-                phone={item.phone}
-                city={item.city}
-                key={item.key}
-              />
-            ))}
-          </table>
-        </div>
-      // </div>
+      <div className="row" >
+        <table className="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th><span role="button" onClick={this.sortByLast}>Last</span></th>
+              <th><span role="button" onClick={this.sortByFirst}>First</span></th>
+              <th>email</th>
+              <th>phone</th>
+            </tr>
+          </thead>
+          {[...this.state.employees].map((item) => (
+            <EmployeeCard
+              picture={item.picture}
+              firstName={item.firstName}
+              lastName={item.lastName}
+              email={item.email}
+              phone={item.phone}
+              city={item.city}
+              key={item.key}
+            />
+          ))}
+        </table>
+      </div>
     );
   }
 }
